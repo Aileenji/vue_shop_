@@ -24,11 +24,21 @@ import {
     Tooltip,
     Pagination,
     Dialog,
-    Popconfirm
+    Popconfirm,
+    Tag,
+    Divider,
+    MessageBox,
+    Tree,
+    Select,
+    Option
 } from 'element-ui';
 
 
-
+Vue.use(Select)
+Vue.use(Option)
+Vue.use(Tree)
+Vue.use(Divider)
+Vue.use(Tag)
 Vue.use(Popconfirm)
 Vue.use(Dialog)
 Vue.use(Pagination)
@@ -54,3 +64,4 @@ Vue.use(Breadcrumb)
 Vue.use(BreadcrumbItem)
 Vue.use(Card)
 Vue.prototype.$message = Message
+Vue.prototype.$confirm = MessageBox.confirm

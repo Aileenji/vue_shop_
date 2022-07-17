@@ -6,7 +6,7 @@
       <el-breadcrumb-item>角色列表</el-breadcrumb-item>
     </el-breadcrumb>
     <el-card>
-      <el-button>添加角色</el-button>
+      <el-button type="primary">添加角色</el-button>
       <el-table :data="roleList" style="width: 100%" border>
         <el-table-column type="expand">
           <template slot-scope="scope">
